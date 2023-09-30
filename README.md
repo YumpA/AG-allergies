@@ -1,2 +1,3 @@
 # AG-allergies
-Bloom tracking app
+Ссылка на макет:
+Ссылка на репозиторий:
