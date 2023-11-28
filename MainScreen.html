@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./css/MainScreen.css">
+    
+</head>
+<body>
+    <main>
+        <section class="status">
+            <div class="container">
+                <h1 class="page_name">Главная</h1>
+                <p class="header_section">Установите статус</p>
+                <div class="reactions">
+                    <div class="reaction">
+                        <img src="./img/listo4k.svg" alt="leaf" width="35px">
+                        <p>Лечусь от аллергии</p>
+                    </div>
+                    <div class="reaction">
+                        <img src="./img/tulpan.svg" alt="tulip" width="35px">
+                        <p>Слежу за цветением</p>
+                    </div>
+                    <div class="reaction">
+                        <img src="./img/smile.svg" alt="smile" width="35px">
+                        <p>Постоянно чихаю</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="useful">
+            <div class="container">
+                <p class="header_section">Полезное</p>
+                <div class="explorer">
+                    <div class="explorer_item1"><a href="./BloomLevel.html" class="explore_link spec1">Уровень цветения<br> и погода</a></div>
+                    <div class="explorer_item2"><a href="./Advice.html" class="explore_link spec2">Советы</a></div>
+                    <div class="explorer_item3"><a href="./Graphic.html" class="explore_link spec2">График состояния</a></div>
+                    <div class="explorer_item4"><a href="./Reactions.html" class="explore_link spec1">Перекрёстные реакции</a></div>
+                </div>
+                <div class="select_reacions">
+                    <a href="./AlergensList.html" class="select_alerg">Выберите аллергены</a>
+                    <img src="./img/RightArrow.png" alt="arrow" width="30px">
+                </div>
+            </div>
+        </section>   
+        <section class="for_you">
+            <div class="container">
+                <p class="header_section">Для тебя</p>
+                <div class="lickbez">
+                    <a class="lickbez_link" href="#">
+                        <img src="./img/Lickbez.png" alt="lickbez">
+                    </a>
+                    <a class="lickbez_header" href="#">Что должен знать каждый аллергик?</a>
+                    <a class="lickbez_description" href="#">Читайте ликбез для алергика и встречайте дивный новый мир без аллергии</a>
+                </div>
+            </div>
+        </section>
+        <section class="more_blooming">
+            <div class="container">
+                <p class="header_section">Наиболее цветущие</p>
+                <div class="list_bloom">
+                <ul class="top_bloom">
+                <li class="more_bloom">Топ цветущих 1</li>
+                    <li class="more_bloom">Топ цветущих 2</li>
+                    <li class="more_bloom">Топ цветущих 3</li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <section class="week_status">
+            <div class="container">
+                <p class="header_section">Твоё состояние за неделю</p>
+                <canvas id="fastGraph" width="300px" height="300px">
+
+                </canvas>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.querySelector('#fastGraph').getContext('2d');
+
+const fastGraph = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['пн', "вт", "ср", "чт", "пт", "сб", "вс"],
+        datasets: [{
+            label: null,
+            data: [5, 5, 4, 4, 5, 2, 1],
+            borderWidth: 2,
+            fill: true
+        }]
+    },
+    options: {}
+})
+</script>
+</html>

@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    float: right;
+    transform: scale(1.5);
+    accent-color: #2688EB;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    position: relative;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    bottom: 40%;
+}
+
+.column {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+    overflow: hidden;
+    max-height: 30px; /* Выберите подходящее значение высоты */
+    transition: max-height 0.3s ease-out;
+}
+
+.dropdown.open {
+    max-height: 650px; /* Максимальная высота при открытом состоянии */
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown.open .dropdown-content {
+    margin: 15px;
+    display: block;
+}
+
+.dropdown-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.dropdown-header svg {
+    transition: transform 0.3s ease-out;
+}
+
+.dropdown.open .dropdown-header svg {
+    transform: rotate(180deg);
+}
+
+.checkbox-dropdown {
+    margin-top: 10px;
+}
+
+.checkbox-dropdown input {
+    margin-right: 8px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #2D81E0;
+    border-radius: 10px;
+    width: 351px;
+    border: none;
+    height: 44px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.ag-list {
+    display: flex;
+    height: 650px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}

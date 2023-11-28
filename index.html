@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG-Allergies</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/drop-down.js"></script>
+</head>
+<body>
+    <div class="section__wrapper">
+        <div class="slider">
+            <div class="slider__items">
+                <div class="screen">
+                    <img class="alerg-img" src="./img/Logo.png" alt="allergens" width="115px">
+                    <p class="alerg-descrip">Следи за здоровьем<br> вместе c нами</p>
+                </div>
+                <div class="screen">
+                    <img class="alerg-img" src="./img/Graph.png" alt="pic1">
+                    <p class="alerg-descrip exclusive">Выбирай аллергены<br>и следи<br> за состоянием</p>
+                </div>
+                <div class="screen">
+                    <img class="alerg-img" src="./img/Man_sneeze.png" alt="pic1" width="325px" height="378px">
+                    <p class="alerg-descrip">Листай советы,<br> смотри за цветением в <br>календаре</p>
+                </div>
+                <div class="screen">
+                    <section class="all_screen">
+                        <div class="header">
+                            <h1 class="h1">Город</h1>
+                        </div>
+                        <div class="search">
+                            <label class="label">
+                                <img class="image" src="img/Search Icon.svg" alt="лупа">
+                            <input type="search" id="searchInput" placeholder="Поиск" class="Search_bar">
+                            </label>
+                            <ul id="searchResults"></ul>
+                        </div>
+                        <div class="choice">
+                            <ul>
+                                <li class="nth_li"><p class="city_p" href="#">Москва</p></li>
+                                <li class="nth_li"><p class="city_p" href="#">Санкт-Петербург</p></li>
+                                <li class="nth_li"><p class="city_p" href="#">Челябинск</p></li>
+                                <li class="nth_li"><p class="city_p" href="#">Волгоград</p></li>
+                                <li class="nth_li"><p class="city_p" href="#">Владивосток</p></li>
+                                <li><p class="city_p" href="#">Воронеж</p></li>
+                                <li><p class="city_p" href="#">Екатеринбург</p></li>
+                                <li><p class="city_p" href="#">Калининград</p></li>
+                                <li><p class="city_p" href="#">Красноярск</p></li>
+                                <li><p class="city_p" href="#">Нижний Новгород</p></li>
+                                <li><p class="city_p" href="#">Новосибирск</p></li>
+                                <li><p class="city_p" href="#">Омск</p></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="screen">
+                    <div class="column">
+                        <div class="h1">
+                            <h1>Аллергены</h1>
+                        </div>                           
+                            <div class="ag-list">
+                                <div class="dropdown" id="dustDropdown">
+                                <div class="dropdown-header">
+                                    <span class="text-bold">Бытовая пыль</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 10L1 5l1.4-1.4L6 7.2l3.6-3.6L11 5 6 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Клещи домашней пыли и продукты <br> их жизнедеятельности</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Споры плесневых грибов</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Выделения домашних животных</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Аллергены тараканов</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Бактерии</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Растительные и неорганические <br> частицы</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Органические соединения <br> из синтетических напольных <br> покрытий, мебели</label>           
+                                </div>
+                            </div>
+                    
+                            <div class="dropdown" id="medicationDropdown">
+                                <div class="dropdown-header">
+                                    <span class="text-bold">Лекарства</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 10L1 5l1.4-1.4L6 7.2l3.6-3.6L11 5 6 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Пенициллин</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Левомицетин</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Сульфаниламиды</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Стрептомицин</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Тетрациклин</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Противовирусные вакцины</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Аспирин</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Этилендиамин</label>           
+                                </div>
+                            </div>
+                    
+                            <div class="dropdown" id="dustDropdown">
+                                <div class="dropdown-header">
+                                    <span class="text-bold">Животые</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 10L1 5l1.4-1.4L6 7.2l3.6-3.6L11 5 6 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Кошки</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Собаки</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Лошади</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Коровы</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Крысы</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Мыши</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Кролики</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Свиньи</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Козы</label>           
+                                </div>
+                            </div>
+                    
+                            <div class="dropdown" id="dustDropdown">
+                                <div class="dropdown-header">
+                                    <span class="text-bold">Пищевые продукты</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 10L1 5l1.4-1.4L6 7.2l3.6-3.6L11 5 6 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Молоко</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Пшеница</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Яйцо</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Арахис</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Соя</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Рыба</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Красная фасоль</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Чечевица</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Шоколад</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Глютен</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Пальмовое масло</label>           
+                                </div>
+                            </div>
+                    
+                            <div class="dropdown" id="dustDropdown">
+                                <div class="dropdown-header">
+                                    <span class="text-bold">Бытовая химия</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 10L1 5l1.4-1.4L6 7.2l3.6-3.6L11 5 6 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Моющие средства</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Парфюмерия и духи</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Ополаскиватели для <br> посудомоечных машин</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Стиральные порошки <br> и кондиционеры</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Дезодоранты <br> и антиперспиранты</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Средства для уборки дома <br> (пылесосы, тряпки, щетки)
+                                        </label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">
+                                        Средства для чистки <br> ванных комнат и туалетов</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Кремы и лосьоны <br> для тела
+                                        </label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Шампуни и кондиционеры <br> для волос
+                                        </label>           
+                                </div>
+                            </div>
+                            <div class="dropdown" id="dustDropdown">
+                                <div class="dropdown-header">
+                                    <span class="text-bold">Растения</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 10L1 5l1.4-1.4L6 7.2l3.6-3.6L11 5 6 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Тополь</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Берёза</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Осина</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Ясень</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Липа</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Клён</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Ива</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Пыльца трав</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Амброзия</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Пыльца рожь</label>           
+                                </div>
+                                <div class="dropdown-content">
+                                    <input class="input_checkbox" type="checkbox" id="dustMites" name="dustMites">
+                                    <label for="dustMites">Пыльца пшеницы</label>           
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        <div class="button-div">
+            <button class="next">Дальше</button>
+        </div>
+    </div>
+</body>
+</html>
