@@ -60,12 +60,17 @@
             <div class="container">
                 <p class="header_section">Наиболее цветущие</p>
                 <div class="list_bloom">
-                <ul class="top_bloom">
-                <li class="more_bloom">Топ цветущих 1</li>
-                    <li class="more_bloom">Топ цветущих 2</li>
-                    <li class="more_bloom">Топ цветущих 3</li>
-                </ul>
-            </div>
+                    <ul class="top_bloom">
+                        <li class="more_bloom">Дуб</li>
+                        <li class="more_bloom">Амброзия</li>
+                        <li class="more_bloom">Ясень</li>
+                    </ul>
+                    <div class="indicators">
+                    <div class="indicator"><span id="topBloom1" class="indicator_item"></span></div>
+                    <div class="indicator"><span id="topBloom2" class="indicator_item"></span></div>
+                    <div class="indicator"><span id="topBloom3" class="indicator_item"></span></div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="week_status">
@@ -89,11 +94,24 @@ const fastGraph = new Chart(ctx, {
         datasets: [{
             label: null,
             data: [5, 5, 4, 4, 5, 2, 1],
-            borderWidth: 2,
+            borderWidth: 3,
             fill: true
         }]
     },
-    options: {}
+    options: {
+        plugins: {
+            legend:{
+                display: false
+            }
+        },
+            scales: {
+                y: {
+                    ticks: {
+                    maxTicksLimit: 5
+                }
+            },
+        }
+    }
 })
 </script>
 </html>

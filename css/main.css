@@ -81,16 +81,42 @@ html, body {
     bottom: -40%;
 }
 
-.next {
+.button-next {
     background-color: #2D81E0;
     border-radius: 10px;
     width: 351px;
     border: none;
     height: 44px;
+    font-size: 15px;
     font-family: 'Roboto', sans-serif;
     color: white;
     cursor: pointer;
 }
+
+.button-next-invis {
+    display: none;
+}
+
+.link-invis {
+    display: none;
+}
+
+.link-vis {
+    display: block;
+    background-color: #2D81E0;
+    border-radius: 10px;
+    width: 351px;
+    border: none;
+    height: 44px;
+    font-size: 15px;
+    padding-top: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
 .input_checkbox {
     float: right;
     transform: scale(1.5);
@@ -272,6 +298,11 @@ ul {
 .nth_li:focus:nth-child(4) {
     background-color: #2D81E0;
 }
+
+.link {
+    src: url(../MainScreen.html);
+}
+
 @keyframes slider {
     from {
         transform: translateX(0);

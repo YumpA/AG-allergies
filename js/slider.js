@@ -1,5 +1,5 @@
 const slider = document.querySelector(".slider__items");
-const next = document.querySelector(".next");
+const next = document.querySelector(".button-next");
 
 let current = 1;
 let maxSlide = 5;

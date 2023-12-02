@@ -96,9 +96,9 @@ h1 {
 
 .ag-list {
     display: flex;
-    height: 650px;
+    height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .text-bold {

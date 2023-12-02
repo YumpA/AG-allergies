@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>График состояния</title>
+    <link rel="stylesheet" href="./css/Graphic.css">
+</head>
+<body>
+    <section class="graphic">
+        <div class="container">
+            <p class="header_section">График состояния</p>
+            <canvas id="mainGraph" width="300px" height="300px">
+            </canvas>
+        </div>
+    </section>
+
+    <section class="calendar"><p>календарь</p></section>
+
+    <section class="status">
+        <div class="container">
+            <div class="status-items">
+                <div class="status-nose items">
+                    <p class="status-header">Нос</p>
+                    <div class="status-item">
+                        <input type="checkbox" id="itching">
+                        <label for="itching">Зуд в носу</label>    
+                    </div>
+                    <div class="status-item">
+                        <input type="checkbox" id="rhinorrhea">
+                        <label for="rhinorrhea">Ринорея</label>    
+                    </div>
+                    <div class="status-item">
+                        <input type="checkbox" id="bleeding">
+                        <label for="bleeding">Кровотечения</label>    
+                    </div>
+                    <div class="status-item">
+                        <input type="checkbox" id="congestion">
+                        <label for="congestion">Заложенность</label>    
+                    </div>
+                    <div class="status-item">
+                        <input type="checkbox" id="sneezing">
+                        <label for="sneezing">Чихание</label>    
+                    </div>
+                </div>
+                <div class="status-eyes items">
+                    <p class="status-header">Глаза</p>
+                    <div class="status-item">
+                        <input type="checkbox" id="tears">
+                        <label for="tears">Слёзы</label>    
+                    </div>
+                    <div class="status-item">
+                        <input type="checkbox" id="dry">
+                        <label for="dry">Сухость</label>    
+                    </div>
+                    <div class="status-item">
+                        <input type="checkbox" id="itch">
+                        <label for="itch">Зуд</label>    
+                    </div>
+                </div>
+                <div class="status-head items">
+                    <p class="status-header">Голова</p>
+                    <div class="status-item">
+                        <input type="checkbox" id="pain">
+                        <label for="pain">Боль</label>    
+                    </div>
+                    <div class="status-item">
+                        <input type="checkbox" id="rhinorrhea">
+                        <label for="rhinorrhea">Мигрень</label>    
+                    </div>
+                    <div class="status-item">
+                        <input type="checkbox" id="temperature">
+                        <label for="temperature">Температура</label>    
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.querySelector('#mainGraph').getContext('2d');
+
+const fastGraph = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['пн', "вт", "ср", "чт", "пт", "сб", "вс"],
+        datasets: [{
+            label: null,
+            data: [5, 5, 4, 4, 5, 2, 1],
+            borderWidth: 3,
+            fill: true
+        }]
+    },
+    options: {
+        plugins: {
+            legend:{
+                display: false
+            }
+        },
+            scales: {
+                y: {
+                    ticks: {
+                    maxTicksLimit: 5
+                }
+            },
+        }
+    }
+})
+</script>
+
+</body>
+</html>

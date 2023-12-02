@@ -184,11 +184,58 @@ box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
 
 /* ------More bloom------- */
 
+.list_bloom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+}
+
 .top_bloom {
-    margin: 18px auto;
     list-style: none;
 }
 
 .more_bloom {
     margin: 10px 0;
+}
+
+.indicators {
+    width: 80px;
+}
+
+.indicator {
+    height: 1px;
+    position: relative;
+    bottom: -1px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    margin: 18px 0;
+}
+
+.indicator_item {
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    display: block;
+    max-width: 80px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#topBloom1 {
+    background-color: red;
+    width: 115%;
+}
+
+#topBloom2 {
+    background-color: red;
+    width: 115%;
+}
+
+#topBloom3 {
+    background-color: orangered;
+    width: 90%;
 }
