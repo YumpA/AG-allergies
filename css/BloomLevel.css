@@ -15,7 +15,18 @@ section {
     padding: 0 10px;
     margin: 0 auto;
 }
-
+@font-face {
+    font-family: TTCommons-DemiBold;
+    src: url(../fonts/TTCommons-DemiBold.ttf);
+}
+@font-face {
+    font-family: TTCommons-Medium;
+    src: url(../fonts/TTCommons-Medium.ttf);
+}
+@font-face {
+    font-family: TTCommons-Regular;
+    src: url(../fonts/TTCommons-Regular.ttf);
+}
 .calendar {
     margin: 20px 0;
 }
@@ -24,12 +35,14 @@ section {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 30px;
-    font-size: 31px;
+    font-size: 21px;
+    font-family: TTCommons-DemiBold;
     font-weight: 600;
 }
 
 .header_section {
-    font-size: 25px;
+    font-size: 21px;
+    font-family: TTCommons-DemiBold;
     font-weight: 600;
 }
 
@@ -47,6 +60,7 @@ section {
 
 .more_bloom {
     margin: 15px 0;
+    font-family: TTCommons-Regular;
 }
 
 .indicators {

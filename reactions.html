@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reactions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/arrow.js"></script>
+</head>
+<body>
+    <section class="main_section">
+        <div class="div_reaction-p1">
+            <h1 class="reactions-p1">Перекрестные реакции</h1>
+        </div>
+        <div class="div_reactions-p2">
+            <h2 class="reactions-p2">Выберите раздел</h2>
+        </div>
+        <div>
+            <div class="dropdown-header" data-modal="modal1" onclick="switchArrow()">
+                <span class="menu-text">Пищевые продукты</span>
+                <img class="arrow-for-open" src="img/right-icon.png" alt="open">
+                <img class="arrow-for-closed" src="img/down-arrow.png" alt="closed">
+                </svg>
+                <div class="modal" id="modal1">
+                <ul class="menu" id="menu">
+                    <div class="only-top">
+                <div class="div-ul-menu">
+                    <li class="text-bold-li">Опасные продукты</li>
+                    <img class="close" src="img/icon.png" alt="exit" width="14px" height="14px">
+                </div>
+                <div class="div-li-menu">
+                    <li>Коровье молоко</li>
+                    <li class="margin-left_only">Бананы</li>
+                </div>
+                <div class="div-li-menu">
+                    <li>Куриные яйца</li>
+                    <li class="margin-left_only">Рыба</li>
+                </div>
+                <div class="div-li-menu">
+                    <li>Косточковые плоды</li>
+                    <li>Бобовые</li>
+                </div>
+            </div>
+                  </ul>
+                </div>
+            </div>
+            <div class="dropdown-header" data-modal="modal2" onclick="switchArrow()">
+                <span class="menu-text">Пищевые продукты</span>
+                <img class="arrow-for-open" src="img/right-icon.png" alt="open">
+                <img class="arrow-for-closed" src="img/down-arrow.png" alt="closed">
+                </svg>
+                <div class="modal" id="modal2">
+                <ul class="menu" id="menu">
+                    <div class="only-top">
+                <div class="div-ul-menu">
+                    <li class="text-bold-li">Опасные продукты</li>
+                    <a class="closeButton" href="#"><img src="img/icon.png" alt="exit" width="14px" height="14px"></a>
+                </div>
+                <div class="div-li-menu">
+                    <li>Коровье молоко</li>
+                    <li class="margin-left_only">Бананы</li>
+                </div>
+                <div class="div-li-menu">
+                    <li>Куриные яйца</li>
+                    <li class="margin-left_only">Рыба</li>
+                </div>
+                <div class="div-li-menu">
+                    <li>Косточковые плоды</li>
+                    <li>Бобовые</li>
+                </div>
+            </div>
+                  </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

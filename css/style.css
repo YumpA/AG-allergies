@@ -1,0 +1,239 @@
+body {
+    background-color: #f4f4f4;
+    max-height: 812;
+    max-width: 375;
+  }
+  @font-face {
+    font-family: TTCommons-DemiBold;
+    src: url(../fonts/TTCommons-DemiBold.ttf);
+}
+@font-face {
+    font-family: TTCommons-Medium;
+    src: url(../fonts/TTCommons-Medium.ttf);
+}
+@font-face {
+    font-family: TTCommons-Regular;
+    src: url(../fonts/TTCommons-Regular.ttf);
+}
+.div_h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_h1 {
+  font-size: 21px;
+  font-family: TTCommons-DemiBold;
+}
+.recommendations {
+    margin: 18px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 351px;
+    -webkit-box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+}
+
+.recommendations_link {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.menu-text {
+  width: 100%;
+}
+
+.arrow-for-closed{
+  display: none;
+}
+
+.vis {
+  display: block;
+}
+
+.invis {
+  display: none;
+}
+
+.recommendations_header {
+    position: relative;
+    font-size: 17px;
+    font-family: TTCommons-DemiBold;
+    left: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    padding-top: 7px;
+    height: 30px;
+}
+
+.recommendations_description {
+    position: relative;
+    font-size: 15px;
+    left: 15px;
+    text-decoration: none;
+    font-family: TTCommons-Regular;
+    padding-bottom: 18px;
+    color: black;
+
+}
+.lickbez {
+    margin: 18px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 351px;
+    -webkit-box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+}
+
+.lickbez_link {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.lickbez_header {
+    position: relative;
+    font-size: 17px;
+    font-family: TTCommons-DemiBold;
+    left: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    padding-top: 7px;
+    height: 30px;
+}
+
+.lickbez_description {
+    position: relative;
+    font-size: 15px;
+    font-family: TTCommons-Regular;
+    left: 15px;
+    text-decoration: none;
+    padding-bottom: 18px;
+    color: black;
+}
+.symptoms {
+    margin: 18px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 351px;
+    -webkit-box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
+}
+
+.symptoms_link {
+    margin: 0 auto;
+    display: inline-block;
+}
+.symptoms_header {
+    position: relative;
+    font-size: 17px;
+    font-family: TTCommons-DemiBold;
+    left: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    padding-top: 7px;
+    height: 30px;
+}
+
+.symptoms_description {
+    position: relative;
+    font-size: 15px;
+    font-family: TTCommons-Regular;
+    left: 15px;
+    text-decoration: none;
+    padding-bottom: 18px;
+    color: black;
+}
+.dropdown-header {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+}
+.reactions-p1 {
+
+}
+.div_reaction-p1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_reactions-p2 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+.menu-container {
+    position: relative;
+  }
+  
+.modal {
+  display: none;
+}
+
+  .menu {
+    position: absolute;
+    top: 330px;
+    width: 350px;
+    height: 272px;
+    left: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+  }
+  
+  .menu li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+  .display_flex-only {
+    display: flex;
+  }
+  .margin-left_only {
+    margin-left: 60px;
+  }
+  .text-bold-li {
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .div-ul-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+  .div-li-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+  }
+ .only-top {
+    padding-top: 15px;
+ }
+ .arrow-for-open:focus {
+    background-image: url(../img/down-arrow.png)
+ }

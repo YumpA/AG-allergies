@@ -13,6 +13,18 @@ html, body {
     padding: 0;
     background-color: #f4f4f4;
 }
+@font-face {
+    font-family: TTCommons-DemiBold;
+    src: url(../fonts/TTCommons-DemiBold.ttf);
+}
+@font-face {
+    font-family: TTCommons-Medium;
+    src: url(../fonts/TTCommons-Medium.ttf);
+}
+@font-face {
+    font-family: TTCommons-Regular;
+    src: url(../fonts/TTCommons-Regular.ttf);
+}
 
 .section__wrapper {
     position: relative;
@@ -30,7 +42,7 @@ html, body {
     min-width: 430px;
     margin: 0 auto;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     transition: transform 0.4s ease-out;
     height: 400px;
 }
@@ -62,6 +74,7 @@ html, body {
     width: 100%;
     margin-top: 25%;
     font-size: 32px;
+    font-family: TTCommons-DemiBold;
     line-height: 26px;
     text-align: center;
 }
@@ -127,11 +140,13 @@ h1 {
     color: #333;
     text-align: center;
     margin-bottom: 20px;
+    font-family: TTCommons-DemiBold;
     bottom: 40%;
 }
 
 .column {
     width: 400px;
+    margin-top: 10%;
 }
 
 .dropdown {
@@ -189,7 +204,9 @@ h1 {
 }
 
 .text-bold {
+    font-size: 21px;
     font-weight: bold;
+    font-family: TTCommons-DemiBold;
 }
 
 #searchInput {
@@ -201,7 +218,10 @@ h1 {
     border: none;
     background-color: #EBEDF0;
 }
-
+.dustMites {
+    font-family: TTCommons-Regular;
+    font-size: 16px;
+}
 .Search_bar {
     background: url(/img/Search\ Icon.svg) no-repeat 3px 1px;
     outline: none;
@@ -237,7 +257,8 @@ h1 {
 }
 
 .h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: TTCommons-DemiBold;
+    font-size: 24px;
 }
 
 .header {
@@ -290,10 +311,11 @@ ul {
 }
 .all_screen {
     position: absolute;
-    margin-top: 300px;
+    margin-top: 700px;
 }
 .city_p {
     cursor: pointer;
+    font-family: TTCommons-Medium;
 }
 .nth_li:focus:nth-child(4) {
     background-color: #2D81E0;
@@ -308,6 +330,6 @@ ul {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-1200px);
+        transform: translateX(-1300px);
     }
 }

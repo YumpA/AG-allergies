@@ -17,7 +17,18 @@ section {
     max-width: 430px;
     padding: 0 10px;
 }
-
+@font-face {
+    font-family: TTCommons-DemiBold;
+    src: url(../fonts/TTCommons-DemiBold.ttf);
+}
+@font-face {
+    font-family: TTCommons-Medium;
+    src: url(../fonts/TTCommons-Medium.ttf);
+}
+@font-face {
+    font-family: TTCommons-Regular;
+    src: url(../fonts/TTCommons-Regular.ttf);
+}
 .reactions {
     display: flex;
     flex-direction: row;
@@ -46,14 +57,20 @@ box-shadow: -1px 0px 100px -10px rgba(34, 60, 80, 0.52);
 
 .page_name {
     text-align: center;
+    font-family: TTCommons-DemiBold;
     margin-top: 60px;
     margin-bottom: 30px;
     font-size: 31px;
     font-weight: 600;
 }
+.mainScreen-p {
+    font-size: 12px;
+    font-family: TTCommons-DemiBold;
+}
 
 .header_section {
-    font-size: 25px;
+    font-size: 21px;
+    font-family: TTCommons-DemiBold;
     font-weight: 600;
 }
 
@@ -79,14 +96,17 @@ box-shadow: -1px 0px 100px -10px rgba(34, 60, 80, 0.52);
 
 .spec1 {
     width: 257px;
+    font-family: TTCommons-DemiBold;
 }
 
 .spec2 {
     width: 116px;
+    font-family: TTCommons-DemiBold;
 }
 
 .spec3 {
     width: 121px;
+    font-family: TTCommons-DemiBold;
 }
 
 .explorer_item1 {
@@ -136,6 +156,7 @@ box-shadow: -1px 0px 100px -10px rgba(34, 60, 80, 0.52);
 }
 
 .select_alerg {
+    font-family: TTCommons-Regular;
     text-decoration: none;
     position: relative;
     color: black;
@@ -167,6 +188,7 @@ box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
     position: relative;
     font-size: 17px;
     left: 15px;
+    font-family: TTCommons-DemiBold;
     font-weight: 600;
     text-decoration: none;
     color: black;
@@ -175,6 +197,7 @@ box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
 
 .lickbez_description {
     position: relative;
+    font-family: TTCommons-Regular;
     font-size: 15px;
     left: 15px;
     text-decoration: none;
@@ -198,6 +221,7 @@ box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
 
 .more_bloom {
     margin: 10px 0;
+    font-family: TTCommons-Regular;
 }
 
 .indicators {
@@ -238,4 +262,19 @@ box-shadow: 0px 13px 37px 11px rgba(34, 60, 80, 0.2);
 #topBloom3 {
     background-color: orangered;
     width: 90%;
+}
+@media (max-width: 390px) {
+    section {
+        max-width: 390px;
+    }
+}
+@media (max-width: 375px) {
+    section {
+        max-width: 375px;
+    }
+}
+@media (max-width: 360px) {
+    section {
+        max-width: 360px;
+    }
 }

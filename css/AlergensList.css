@@ -15,7 +15,6 @@ html,body {
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -28,7 +27,18 @@ h1 {
     margin-bottom: 20px;
     bottom: 40%;
 }
-
+@font-face {
+    font-family: TTCommons-DemiBold;
+    src: url(../fonts/TTCommons-DemiBold.ttf);
+}
+@font-face {
+    font-family: TTCommons-Medium;
+    src: url(../fonts/TTCommons-Medium.ttf);
+}
+@font-face {
+    font-family: TTCommons-Regular;
+    src: url(../fonts/TTCommons-Regular.ttf);
+}
 .column {
     max-width: 400px;
     margin: 50px auto;
@@ -103,4 +113,14 @@ h1 {
 
 .text-bold {
     font-weight: bold;
+    font-size: 24px;
+    font-family: TTCommons-DemiBold;
 }
+.dustMites {
+    font-family: TTCommons-Regular;
+    font-size: 16px;
+}
+.h1 {
+    font-size: 24px;
+    font-family: TTCommons-DemiBold;
+  }

@@ -9,7 +9,18 @@
 section {
     padding: 0 10px;
 }
-
+@font-face {
+    font-family: TTCommons-DemiBold;
+    src: url(../fonts/TTCommons-DemiBold.ttf);
+}
+@font-face {
+    font-family: TTCommons-Medium;
+    src: url(../fonts/TTCommons-Medium.ttf);
+}
+@font-face {
+    font-family: TTCommons-Regular;
+    src: url(../fonts/TTCommons-Regular.ttf);
+}
 .calendar {
     margin: 30px 0;
 }
@@ -19,7 +30,8 @@ section {
 }
 
 .header_section {
-    font-size: 25px;
+    font-size: 21px;
+    font-family: TTCommons-DemiBold;
     margin: 20px auto;
     font-weight: 600;
     text-align: center;
@@ -57,9 +69,13 @@ section {
 
 .status-header {
     font-size: 25px;
+    font-family: TTCommons-DemiBold;
     font-weight: 600;
 }
-
+.disease {
+    font-size: 16px;
+    font-family: TTCommons-Regular;
+}
 .items {
     display: flex;
     flex-direction: column;
